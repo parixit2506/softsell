@@ -40,7 +40,7 @@ const Hero = () => {
             <div className="relative mx-auto w-full max-w-md">
               <div className="shadow-xl rounded-2xl overflow-hidden transform transition-all">
                 <img
-                  src=".\image\Data_security_05.jpg"
+                  src="image\Data_security_05.jpg"
                   alt="Software License Management"
                   className="w-full h-auto object-cover"
                 />

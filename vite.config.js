@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: process.env.NODE_ENV === 'production' ? false : true,
+    open: process.env.NODE_ENV !== 'production'
   },
   build: {
     outDir: 'dist',

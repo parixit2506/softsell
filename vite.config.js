@@ -1,18 +1,16 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: process.env.NODE_ENV !== 'production'
+    open: false // 🔒 prevent xdg-open error
   },
   build: {
     outDir: 'dist',
     minify: 'terser',
     sourcemap: false,
   },
-  // Optional: set base path if needed for Vercel
-   base: './', // Uncomment only if you serve from subdirectory
+  base: './', // Optional: adjust if deploying under subpath
 })

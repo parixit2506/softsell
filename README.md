@@ -67,7 +67,7 @@ SoftSell is a responsive, single-page marketing website for a fictional software
 
 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/softsell.git
+git clone https://github.com/parixit2506/softsell.git
 cd softsell
 ```
 

@@ -6,12 +6,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 3000,
-    open: true
+    open: true,
   },
   build: {
     outDir: 'dist',
     minify: 'terser',
     sourcemap: false,
-  }
-  base: '/',
+  },
+  // Optional: set base path if needed for Vercel
+   base: './', // Uncomment only if you serve from subdirectory
 })
